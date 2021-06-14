@@ -91,6 +91,6 @@ function preload_post_thumbnail() {
 
     /** Output the link HTML tag */
     printf( '<link rel="preload" as="image" href="%s" %s/>', esc_url( $src ), $additional_attr );
-	printf('<link rel="preload" as="image" href="%s" imagesrcset="%s"', "https://thebreadguru.com/wp-content/uploads/2016/07/cropped-cher2.jpg", "https://thebreadguru.com/wp-content/uploads/2016/07/cropped-cher2.jpg");
+    printf('<link rel="preload" as="image" href="%s" imagesrcset="%s"', "https://thebreadguru.com/wp-content/uploads/2016/07/cropped-cher2.jpg", "https://thebreadguru.com/wp-content/uploads/2016/07/cropped-cher2.jpg");
 }
 add_action( 'wp_head', 'preload_post_thumbnail' );
